@@ -1,0 +1,272 @@
+2025-Sep-25 02:39:23 AM - app.py - chatsocket - ERROR - Line No : 50 - Disconnected from  and 1006
+2025-Sep-25 02:43:30 AM - chatModule.py - chatWithUser - ERROR - Line No : 369 - Exception occured while chatting - Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+2025-Sep-25 02:43:30 AM - app.py - chatsocket - ERROR - Line No : 56 - The Received message is in wrong format => 'NoneType' object has no attribute 'get'
+2025-Sep-25 06:18:24 PM - chatModule.py - chatWithUser - ERROR - Line No : 369 - Exception occured while chatting - Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+2025-Sep-25 06:18:24 PM - app.py - chatsocket - ERROR - Line No : 85 - An unexpected error occurred: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\app.py", line 71, in chatsocket
+    response_data = chat.get("response")
+                    ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2025-Sep-25 07:11:52 PM - app.py - chatsocket - WARNING - Line No : 80 - Client disconnected: code=1005, reason=''
+2025-Sep-25 07:12:11 PM - chatModule.py - chatWithUser - ERROR - Line No : 369 - Exception occured while chatting - 'name'
+2025-Sep-25 07:12:11 PM - app.py - chatsocket - ERROR - Line No : 85 - An unexpected error occurred: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\app.py", line 71, in chatsocket
+    response_data = chat.get("response")
+                    ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2025-Sep-25 07:19:26 PM - chatModule.py - askQuestion - WARNING - Line No : 122 - Non-integer input given - invalid literal for int() with base 10: 'Slim'
+2025-Sep-25 07:19:46 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Sep-26 01:27:06 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Sep-26 06:55:38 AM - chatModule.py - chatWithUser - ERROR - Line No : 266 - Exception occurred while chatting - Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+Traceback (most recent call last):
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 205, in chatWithUser
+    return {"response": askQuestion(msg, session, state)}
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 130, in askQuestion
+    state.prakriti = get_ans(state.ans_list)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 95, in get_ans
+    val = prakriti_Model.predict(np.array([ans]), verbose=0)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\layers\input_spec.py", line 227, in assert_input_compatibility
+    raise ValueError(
+ValueError: Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+2025-Sep-26 06:57:04 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1001, reason=''
+2025-Sep-26 07:07:36 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1001, reason=''
+2025-Sep-26 07:08:20 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Sep-26 07:09:01 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Sep-26 07:09:29 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Sep-26 07:24:03 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1012, reason=''
+2025-Sep-26 07:43:11 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Sep-26 10:12:48 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Sep-26 11:50:48 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1001, reason=''
+2025-Sep-26 03:05:07 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1001, reason=''
+2025-Sep-26 03:13:23 PM - chatModule.py - chatWithUser - ERROR - Line No : 289 - Exception occurred while chatting - Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+Traceback (most recent call last):
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 226, in chatWithUser
+    return {"response": askQuestion(msg, session, state)}
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 149, in askQuestion
+    state.prakriti = get_ans(state.ans_list) # Get the final prediction.
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 111, in get_ans
+    val = prakriti_Model.predict(np.array([ans]), verbose=0)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\tejde\Desktop\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\layers\input_spec.py", line 227, in assert_input_compatibility
+    raise ValueError(
+ValueError: Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+2025-Sep-29 09:39:20 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Sep-29 09:40:27 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Sep-29 09:44:38 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Oct-11 02:15:46 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Nov-10 09:22:13 PM - chatModule.py - chatWithUser - ERROR - Line No : 289 - Exception occurred while chatting - Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+Traceback (most recent call last):
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 226, in chatWithUser
+    return {"response": askQuestion(msg, session, state)}
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 149, in askQuestion
+    state.prakriti = get_ans(state.ans_list) # Get the final prediction.
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 111, in get_ans
+    val = prakriti_Model.predict(np.array([ans]), verbose=0)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\layers\input_spec.py", line 227, in assert_input_compatibility
+    raise ValueError(
+ValueError: Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+2025-Nov-10 09:24:55 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1012, reason=''
+2025-Nov-10 09:43:39 PM - chatModule.py - chatWithUser - ERROR - Line No : 289 - Exception occurred while chatting - Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+Traceback (most recent call last):
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 226, in chatWithUser
+    return {"response": askQuestion(msg, session, state)}
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 149, in askQuestion
+    state.prakriti = get_ans(state.ans_list) # Get the final prediction.
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 111, in get_ans
+    val = prakriti_Model.predict(np.array([ans]), verbose=0)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\layers\input_spec.py", line 227, in assert_input_compatibility
+    raise ValueError(
+ValueError: Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+2025-Nov-10 09:53:47 PM - chatModule.py - chatWithUser - ERROR - Line No : 289 - Exception occurred while chatting - Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+Traceback (most recent call last):
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 226, in chatWithUser
+    return {"response": askQuestion(msg, session, state)}
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 149, in askQuestion
+    state.prakriti = get_ans(state.ans_list) # Get the final prediction.
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 111, in get_ans
+    val = prakriti_Model.predict(np.array([ans]), verbose=0)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\layers\input_spec.py", line 227, in assert_input_compatibility
+    raise ValueError(
+ValueError: Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+2025-Nov-10 10:11:47 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1001, reason=''
+2025-Nov-10 10:18:42 PM - chatModule.py - chatWithUser - ERROR - Line No : 289 - Exception occurred while chatting - Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+Traceback (most recent call last):
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 226, in chatWithUser
+    return {"response": askQuestion(msg, session, state)}
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 149, in askQuestion
+    state.prakriti = get_ans(state.ans_list) # Get the final prediction.
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 111, in get_ans
+    val = prakriti_Model.predict(np.array([ans]), verbose=0)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\layers\input_spec.py", line 227, in assert_input_compatibility
+    raise ValueError(
+ValueError: Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 162, but received input with shape (1, 20)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 20), dtype=int32)
+  • training=False
+  • mask=None
+2025-Nov-10 10:19:14 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1012, reason=''
+2025-Nov-11 12:27:10 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1012, reason=''
+2025-Nov-11 12:31:02 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Nov-12 10:06:28 AM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1012, reason=''
+2025-Nov-30 05:21:49 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1012, reason=''
+2025-Nov-30 06:21:58 PM - chatModule.py - chatWithUser - ERROR - Line No : 295 - Exception occurred while chatting - Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 20, but received input with shape (1, 162)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 162), dtype=float32)
+  • training=False
+  • mask=None
+Traceback (most recent call last):
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 238, in chatWithUser
+    return {"response": askQuestion(msg, session, state)}
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 170, in askQuestion
+    state.prakriti = get_ans(state.ans_list)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\bot\chatModule.py", line 135, in get_ans
+    val = prakriti_Model.predict(processed_input, verbose=0)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Capstone Project\Prakriti-Determine-main\Prakriti-Determine-main\venv\Lib\site-packages\keras\src\layers\input_spec.py", line 227, in assert_input_compatibility
+    raise ValueError(
+ValueError: Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 20, but received input with shape (1, 162)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 162), dtype=float32)
+  • training=False
+  • mask=None
+2025-Nov-30 06:22:18 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1012, reason=''
+2025-Nov-30 06:23:34 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1012, reason=''
+2025-Nov-30 06:43:17 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1005, reason=''
+2025-Nov-30 06:48:09 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1001, reason=''
+2025-Nov-30 06:48:11 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1012, reason=''
+2025-Nov-30 06:51:07 PM - app.py - chatsocket - WARNING - Line No : 76 - Client disconnected: code=1001, reason=''
